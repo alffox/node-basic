@@ -1,5 +1,6 @@
-const helpers = require('./helpers');
+// const helpers = require('./helpers');
+const { sum } = require('./helpers');
 
-const total = helpers.sum(10, 200);
+const total = sum(10, 200);
 
 console.log("Total: " + total);
