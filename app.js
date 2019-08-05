@@ -21,14 +21,19 @@ const { sum } = require('./helpers');
 const fs = require('fs')
 const fileName = "target.txt"
 
+//*Synchronous function start - DON'T DO THIS AT HOME!
+const data = fs.readFileSync(fileName)
+console.log(data.toString());
+//*Synchronous function end
+
 // fs.watch(fileName, () => console.log('File Changed!'))
 
-fs.readFile(fileName, (err, data) => {
-    if(err) {
-        console.log(err)
-    }
-    console.log(data.toString())
-});
+// fs.readFile(fileName, (err, data) => {
+//     if(err) {
+//         console.log(err)
+//     }
+//     console.log(data.toString())
+// });
 
 console.log('nodejs async programming... ?');
 
