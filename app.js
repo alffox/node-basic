@@ -1,6 +1,7 @@
 // const helpers = require('./helpers');
 const { sum } = require('./helpers');
 
+//*Usage of http package start
 // const http = require('http');
 
 // const server = http.createServer((req, res) => {
@@ -17,6 +18,9 @@ const { sum } = require('./helpers');
 // })
 
 // app.listen(3000)
+//*Usage of require http package end
+
+//*Usage of fs package start
 
 const fs = require('fs')
 const fileName = "target.txt"
@@ -26,6 +30,7 @@ const data = fs.readFileSync(fileName)
 console.log(data.toString());
 //*Synchronous function end
 
+//*Asynchronous function start
 // fs.watch(fileName, () => console.log('File Changed!'))
 
 // fs.readFile(fileName, (err, data) => {
@@ -34,6 +39,9 @@ console.log(data.toString());
 //     }
 //     console.log(data.toString())
 // });
+//*Asynchronous function end
+
+//*Usage of fs package end
 
 console.log('nodejs async programming... ?');
 
