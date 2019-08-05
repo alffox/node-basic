@@ -4,7 +4,7 @@
   "description": "Snippets from the \"Node JS API Development for Beginners\" lessons @ https://www.udemy.com/node-js-api-tutorial/",
   "main": "app.js",
   "scripts": {
-    "dev": "node app.js"
+    "dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",
