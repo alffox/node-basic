@@ -21,7 +21,16 @@ const { sum } = require('./helpers');
 const fs = require('fs')
 const fileName = "target.txt"
 
-fs.watch(fileName, () => console.log('File Changed!'));
+// fs.watch(fileName, () => console.log('File Changed!'))
+
+fs.readFile(fileName, (err, data) => {
+    if(err) {
+        console.log(err)
+    }
+    console.log(data.toString())
+});
+
+console.log('nodejs async programming... ?');
 
 const total = sum(10, 200);
 
