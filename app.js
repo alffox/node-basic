@@ -25,20 +25,21 @@ const { sum } = require('./helpers');
 const fs = require('fs')
 const fileName = "target.txt"
 
+const errHandler = (err) => console.log(err);
+const dataHandler = (data) => console.log(data.toString());
+
 //*Synchronous function start - DON'T DO THIS AT HOME!
-const data = fs.readFileSync(fileName)
-console.log(data.toString());
+// const data = fs.readFileSync(fileName)
+// console.log(data.toString());
 //*Synchronous function end
 
 //*Asynchronous function start
-// fs.watch(fileName, () => console.log('File Changed!'))
+fs.watch(fileName, () => console.log('File Changed!'))
 
-// fs.readFile(fileName, (err, data) => {
-//     if(err) {
-//         console.log(err)
-//     }
-//     console.log(data.toString())
-// });
+fs.readFile(fileName, (err, data) => {
+    if(err) errHandler(err);
+    dataHandler(data)
+});
 //*Asynchronous function end
 
 //*Usage of fs package end
