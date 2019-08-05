@@ -1,0 +1,19 @@
+{
+  "name": "node-basic",
+  "version": "1.0.0",
+  "description": "Snippets from the \"Node JS API Development for Beginners\" lessons @ https://www.udemy.com/node-js-api-tutorial/",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alffox/node-basic.git"
+  },
+  "author": "Alfonso Crisci",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alffox/node-basic/issues"
+  },
+  "homepage": "https://github.com/alffox/node-basic#readme"
+}
